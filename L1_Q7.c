@@ -6,13 +6,16 @@ Herbert Lucas Corrêa Fonseca - 2015090044
 
 #include<stdio.h>
 
-int main()
+int main(argc, char** argv)
 {
+    
     int n, qtdp=0, qtdi=0, i=0;
+    
     while(i<10)
     {
         printf("Digite um numero: ");
         scanf("%d", &n);
+        
         if(n%2==0)
         {
             qtdp++;
@@ -23,6 +26,7 @@ int main()
         }
         i++;
     }
+    
     printf("Quantidade de Pares: %d\n", qtdp);
     printf("Quantidade de Impares: %d\n", qtdi);
     return 0;
